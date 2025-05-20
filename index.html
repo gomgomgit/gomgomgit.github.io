@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willow Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['"Bebas Neue"', 'sans-serif'],
+            body: ['Barlow', 'sans-serif']
+          },
+          fontSize: {
+            'xs': '0.875rem',
+            'sm': '1rem',
+            'base': '1.25rem',
+            'lg': '1.5rem',
+            'xl': '2rem',
+            '2xl': '2.5rem',
+            '3xl': '3rem',
+            '4xl': '4rem',
+            '5xl': '5rem',
+            '6xl': '6rem',
+            '7xl': '7rem',
+            '8xl': '8rem',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          },
+          animation: {
+            fadeInUp: 'fadeInUp 0.5s ease-out forwards'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .smooth-scroll {
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+      transition: scroll 0.7s ease-in-out;
+    }
+    .fade-section {
+      opacity: 0;
+      transition: opacity 3s ease-out;
+    }
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-100 text-red-600 font-body text-lg">
+  <div class="snap-y snap-mandatory overflow-y-scroll h-screen smooth-scroll">
+
+    <section class="snap-start h-screen bg-white fade-section">
+      <!-- Hero Section -->
+      <div class="flex justify-between h-full">
+        <div class="px-10 pt-16 pb-10 grow flex flex-col justify-between">
+          <div class="">
+            <h1 class="text-8xl font-heading">"PORTOFOLIO"</h1>
+          </div>
+          <div class="grid grid-cols-3 gap-10 w-full font-heading mt-16 text-center px-10">
+            <a href="#gd"><p class="cursor-pointer border-red-600 hover:text-red-900 transition-all text-4xl hover:text-5xl duration-150">GRAPHIC DESIGN</p></a>
+            <a href="#photo"><p class="cursor-pointer border-red-600 hover:text-red-900 transition-all text-4xl hover:text-5xl duration-150">PHOTOGRAPHY</p></a>
+            <a href="#wd"><p class="cursor-pointer border-red-600 hover:text-red-900 transition-all text-4xl hover:text-5xl duration-150">WEB DESIGN</p></a>
+          </div>
+        </div>
+        
+        <div class="text-right bg-red-500 px-20 py-16 flex flex-col justify-between text-white">
+          <div>
+            <h2 class="text-5xl font-heading">Willow</h2>
+            <p class="text-base -mt-1">PERSONAL STUDIO</p>
+          </div>
+          <div>
+            <p class="text-base">CREATED BY HAMAM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gd" class="snap-start h-screen bg-zinc-300 px-10 pt-16 pb-10 fade-section">
+      <!-- graphic design -->
+      <div class="flex justify-between h-full">
+        <div class="">
+          <h3 class="text-7xl font-heading">"GRAPHIC</h3>
+          <h3 class="text-7xl font-heading -mt-16">&nbsp;&nbsp;DESIGN"</h3>
+        </div>
+        <div class="grid grid-flow-col grid-rows-3 gap-8 h-full">
+          <img src="./assets/poster/01.png" alt="01" class="max-h-64 rounded shadow">
+          <img src="./assets/poster/02.png" alt="02" class="max-h-64 rounded shadow">
+          <img src="./assets/poster/03.png" alt="03" class="max-h-64 rounded shadow">
+          <img src="./assets/poster/04.png" alt="04" class="max-h-64 rounded shadow">
+          <img src="./assets/poster/06.png" alt="06" class="max-h-64 rounded shadow">
+          <img src="./assets/poster/07.png" alt="07" class="max-h-64 rounded shadow">
+          <img src="./assets/poster/08.png" alt="08" class="max-h-64 rounded shadow">
+          <img src="./assets/poster/09.png" alt="09" class="max-h-64 rounded shadow">
+          <img src="./assets/poster/10.png" alt="10" class="max-h-64 rounded shadow">
+        </div>
+        <div class="flex flex-col justify-between">
+          <p class="text-neutral-700 font-body text-sm">*Dibuat dengan adobe illustrator</p>
+          <h2 class="text-4xl font-heading">"Willow"</h2>
+        </div>
+      </div> 
+    </section>
+
+    <section id="photo" class="snap-start h-screen bg-red-600 text-white px-10 py-20 fade-section">
+      <!-- photography -->
+      <div class="flex justify-between gap-4 h-full">
+        <div class="h-full ">
+          <div class="grid grid-cols-3 gap-6">
+            <img src="./assets/photo/01.jpg" alt="Art" class="h-96 rounded shadow">
+            <img src="./assets/photo/02.jpg" alt="Art" class="h-96 rounded shadow">
+            <img src="./assets/photo/03.jpg" alt="Art" class="h-96 rounded shadow">
+            <img src="./assets/photo/04.jpg" alt="Art" class="h-96 rounded shadow">
+            <img src="./assets/photo/05.jpg" alt="Art" class="h-96 rounded shadow">
+            <img src="./assets/photo/06.jpg" alt="Art" class="h-96 rounded shadow">
+          </div>
+        </div>
+        <div class="flex grow justify-center items-center">
+          <div>
+            <h3 class="text-7xl text-center font-heading">"PHOTOGRAPHY"</h3>
+            <div class="-mt-6">
+              <p class="text-white font-body text-sm text-center">Diambil dengan kamera hp dan lumix gf-9</p>
+              <p class="text-white font-body text-sm text-center">dan di edit dengan lightroom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="wd" class="snap-start h-screen bg-zinc-300 px-10 pt-16 pb-10 fade-section">
+      <!-- web design -->
+      <div class="flex h-full">
+        <div class="flex flex-col justify-between">
+          <h2 class="text-4xl font-heading">"Willow"</h2>
+          <h3 class="text-7xl font-heading text-nowrap">"WEB DESIGN"</h3>
+        </div>
+        <div class="flex justify-end">
+          <img src="./assets/web/03.png" alt="01" class="rounded shadow h-full">
+        </div>
+      </div> 
+    </section>
+
+    <section class="snap-start h-screen bg-red-600 px-10 py-20 text-center fade-section">
+      <!-- Thank You -->
+      <h2 class="text-7xl font-heading text-white">THANK YOU</h2>
+      <p class="text-base mt-4 font-body text-white">WILLOW' — CREATIVE REPRESENTATION</p>
+    </section>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+
+</html>
