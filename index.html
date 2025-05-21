@@ -62,26 +62,46 @@
   </style>
 </head>
 
-<body class="bg-neutral-100 text-red-600 font-body text-lg">
+<body class="bg-neutral-300 text-red-600 font-body text-lg">
   <div class="snap-y snap-mandatory overflow-y-scroll h-screen smooth-scroll">
 
     <section class="snap-start h-screen bg-white fade-section">
       <!-- Hero Section -->
       <div class="flex justify-between h-full">
-        <div class="px-10 pt-16 pb-10 grow flex flex-col justify-between">
-          <div class="">
+        <div class="grow flex flex-col justify-between">
+          <div class="px-10 pt-16">
             <h1 class="text-8xl font-heading">"PORTOFOLIO"</h1>
           </div>
-          <div class="grid grid-cols-3 gap-10 w-full font-heading mt-16 text-center px-10">
-            <a href="#gd"><p class="cursor-pointer border-red-600 hover:text-red-900 transition-all text-4xl hover:text-5xl duration-150">GRAPHIC DESIGN</p></a>
-            <a href="#photo"><p class="cursor-pointer border-red-600 hover:text-red-900 transition-all text-4xl hover:text-5xl duration-150">PHOTOGRAPHY</p></a>
-            <a href="#wd"><p class="cursor-pointer border-red-600 hover:text-red-900 transition-all text-4xl hover:text-5xl duration-150">WEB DESIGN</p></a>
+          <div>
+            <h3 class="text-5xl font-heading px-12 -mb-10">INDEX :</h3>
+            <div class="grid grid-cols-4 w-full font-heading mt-16 text-center text-white">
+              <a href="#gd">
+                <div class="bg-red-500 h-48 cursor-pointer transition-all text-3xl hover:text-4xl hover:bg-red-600 hover:text-red-900 duration-150 flex items-center justify-center">
+                  <p>GRAPHIC DESIGN</p>
+                </div>
+              </a>
+              <a href="#photo">
+                <div class="bg-red-500 h-48 cursor-pointer transition-all text-3xl hover:text-4xl hover:bg-red-600 hover:text-red-900 duration-150 flex items-center justify-center">
+                  <p>PHOTOGRAPHY</p>
+                </div>
+              </a>
+              <a href="#wd">
+                <div class="bg-red-500 h-48 cursor-pointer transition-all text-3xl hover:text-4xl hover:bg-red-600 hover:text-red-900 duration-150 flex items-center justify-center">
+                  <p>WEB DESIGN</p>
+                </div>
+              </a>
+              <a href="#font">
+                <div class="bg-red-500 h-48 cursor-pointer transition-all text-3xl hover:text-4xl hover:bg-red-600 hover:text-red-900 duration-150 flex items-center justify-center">
+                  <p>FONT</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         
-        <div class="text-right bg-red-500 px-20 py-16 flex flex-col justify-between text-white">
+        <div class="text-center bg-red-600 px-20 py-16 flex flex-col justify-between text-white">
           <div>
-            <h2 class="text-5xl font-heading">Willow</h2>
+            <h2 class="text-5xl font-heading">"Willow"</h2>
             <p class="text-base -mt-1">PERSONAL STUDIO</p>
           </div>
           <div>
@@ -98,7 +118,7 @@
           <h3 class="text-7xl font-heading">"GRAPHIC</h3>
           <h3 class="text-7xl font-heading -mt-16">&nbsp;&nbsp;DESIGN"</h3>
         </div>
-        <div class="grid grid-flow-col grid-rows-3 gap-8 max-h-full">
+        <div class="grid grid-flow-col grid-rows-3 gap-6 max-h-full">
           <img src="./assets/poster/01.png" alt="01" class="max-h-48 rounded shadow">
           <img src="./assets/poster/02.png" alt="02" class="max-h-48 rounded shadow">
           <img src="./assets/poster/03.png" alt="03" class="max-h-48 rounded shadow">
@@ -116,20 +136,21 @@
       </div> 
     </section>
 
-    <section id="photo" class="snap-start h-screen bg-red-600 text-white px-10 py-20 fade-section overflow-hidden">
+    <section id="photo" class="snap-start h-screen bg-red-600 text-white px-10 py-10 fade-section overflow-hidden">
       <!-- photography -->
       <div class="flex justify-between gap-4 h-full">
-        <div class="h-full ">
+        <div class="h-full flex items-center">
           <div class="grid grid-cols-3 gap-6">
-            <img src="./assets/photo/01.jpg" alt="Art" class="max-w-64 rounded shadow">
-            <img src="./assets/photo/04.jpg" alt="Art" class="max-w-64 rounded shadow">
-            <img src="./assets/photo/03.jpg" alt="Art" class="max-w-64 rounded shadow">
-            <img src="./assets/photo/02.jpg" alt="Art" class="max-w-64 rounded shadow">
-            <img src="./assets/photo/05.jpg" alt="Art" class="max-w-64 rounded shadow">
-            <img src="./assets/photo/06.jpg" alt="Art" class="max-w-64 rounded shadow">
+            <img src="./assets/photo/01.jpg" alt="Art" class="max-w-56 rounded shadow">
+            <img src="./assets/photo/04.jpg" alt="Art" class="max-w-56 rounded shadow">
+            <img src="./assets/photo/03.jpg" alt="Art" class="max-w-56 rounded shadow">
+            <img src="./assets/photo/02.jpg" alt="Art" class="max-w-56 rounded shadow">
+            <img src="./assets/photo/05.jpg" alt="Art" class="max-w-56 rounded shadow">
+            <img src="./assets/photo/06.jpg" alt="Art" class="max-w-56 rounded shadow">
           </div>
         </div>
-        <div class="flex grow justify-center items-center">
+        <div class="flex flex-col grow justify-between items-center">
+          <h2 class="text-4xl font-heading">"Willow"</h2>
           <div>
             <h3 class="text-7xl text-center font-heading">"PHOTOGRAPHY"</h3>
             <div class="-mt-6">
@@ -137,6 +158,7 @@
               <p class="text-white font-body text-sm text-center">dan di edit dengan lightroom</p>
             </div>
           </div>
+          <div></div>
         </div>
       </div>
     </section>
@@ -146,7 +168,10 @@
       <div class="flex h-full">
         <div class="flex flex-col justify-between">
           <h2 class="text-4xl font-heading">"Willow"</h2>
-          <h3 class="text-7xl font-heading text-nowrap">"WEB DESIGN"</h3>
+          <div>
+            <h3 class="text-7xl font-heading text-nowrap">"WEB DESIGN"</h3>
+            <p class="font-body text-sm text-center -mt-8">Dibuat dengan Tailwind & Vue.js</p>
+          </div>
         </div>
         <div class="flex justify-end">
           <img src="./assets/web/03.png" alt="01" class="rounded shadow h-full">
@@ -154,10 +179,30 @@
       </div> 
     </section>
 
-    <section class="snap-start h-screen bg-red-600 px-10 py-20 text-center fade-section">
+    <section id="font" class="snap-start h-screen bg-red-600 text-white px-10 py-20 fade-section overflow-hidden">
+      <!-- font -->
+      <div class="flex justify-between gap-4 h-full">
+        <div class="h-full flex items-center">
+          <div class="grid gap-6">
+            <img src="./assets/font/01.png" alt="font" class="max-w-72 rounded shadow">
+            <img src="./assets/font/02.png" alt="font" class="max-w-72 rounded shadow">
+          </div>
+        </div>
+        <div class="flex flex-col grow justify-between items-center">
+          <div></div>
+          <div>
+            <h3 class="text-8xl text-center font-heading">"FONT"</h3>
+            <p class="text-white font-body text-sm text-center -mt-8">Dibuat dengan Adobe Illustrator</p>
+          </div>
+          <h2 class="text-4xl font-heading -mb-12">"Willow"</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="snap-start h-screen bg-neutral-300 px-10 py-20 text-center fade-section">
       <!-- Thank You -->
-      <h2 class="text-7xl font-heading text-white">THANK YOU</h2>
-      <p class="text-base mt-4 font-body text-white">WILLOW' — CREATIVE REPRESENTATION</p>
+      <h2 class="text-7xl font-heading text-red-600">THANK YOU</h2>
+      <p class="text-base mt-4 font-body text-red-600">"WILLOW" — CREATIVE REPRESENTATION</p>
     </section>
   </div>
 
